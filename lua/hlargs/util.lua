@@ -20,6 +20,7 @@ local ignored_field_names = {
     method_invocation = { "name" },
     field_access = { "field" },
   },
+  scala = { field_expression = { "field" } },
   vim = {
     scoped_identifier = { "_" },
   },
@@ -57,6 +58,7 @@ local function_or_catch_node_validators = {
   r = { "function_definition" },
   ruby = { "method", "lambda", "block", "do_block", "rescue" },
   rust = { "function_item" },
+	scala = { 'lambda_expression', 'function_definition' },
   solidity = { "function_declaration", "function_definition", "constructor_definition", "modifier_definition" },
   tsx = { "function_declaration", "function_expression", "method_definition", "arrow_function", "catch_clause" },
   typescript = { "function_declaration", "function_expression", "method_definition", "arrow_function", "catch_clause" },

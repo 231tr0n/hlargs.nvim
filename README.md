@@ -135,6 +135,7 @@ Currently these languages are supported
 - r
 - ruby
 - rust
+- scala
 - solidity
 - tsx (react)
 - typescript
@@ -197,4 +198,3 @@ fine
 - `debounce.slow_parse`: same but for slow parses. It affects how quickly the highlighting will
   regain consistency after it is lost, but you shouldn't set it too low, it might have a big impact
   (default: 5000ms)
-
